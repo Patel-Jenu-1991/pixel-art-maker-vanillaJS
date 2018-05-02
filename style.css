@@ -1,0 +1,197 @@
+/*
+    CSS for my Pixel Art App
+    Author: Jaineshkumar Patel
+    
+    Credits:
+    --------
+    1. Team Udacity for providing the starter code
+    2. www.cursor.cc for providing the cursor image
+    
+    I would like to bring to your notice that cursor.cc
+    is itself an implementation of the pixel art app
+    
+    References:
+    -----------
+    MDN
+    W3Schools
+*/
+
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|Gugi|Orbitron");
+
+body {
+  background-color: rgba(69, 69, 69, 0.5);
+  background-image: linear-gradient(
+    to right,
+    rgba(128, 0, 255, 1),
+    rgba(191, 0, 255, 1),
+    rgba(191, 0, 255, 1),
+    rgba(128, 0, 255, 1)
+  );
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Gugi", cursive;
+  font-size: 70px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 0 0 0.45em;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  background: rgba(255, 255, 255, 1);
+  border: 4px ridge rgba(0, 0, 0, 1);
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  cursor: url("data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAR0dHAP///wAiIiIAMjIyABYWFgA9PT0AODg4AE9PTwBfX18AKioqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIiIiIgAAAAAAAAAACgAAAKMAAAIAAAAAAAAAAAAAAAoiMAACAAAAAAAAAAAAAAACIiYAAgAAAAAAAAAAYAAAIiIiMAIAAAAAAAAAADAAAiIiIiACAAAAAAAAAAUFACIiIiIiQgAAAAAAAAADAKIiIiIiIgIAAAAAAAAAAGMiImIiIiECAAAAAAAAAAUAIiApIiJgAgAAAAAAAAAApgIiAiIgAAIAAAAAAAAAAAAKIoIiAAACAAAAAAAAAAAABwICIAAAAgAAAAAAAAAAAAAAAlAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAACgAIAAAgAAAAAAAAAAAAAAAKAAAAIAAAAAAAAAD///////////////////////////////////////////////////////////////////////////////+AAH//359//58Pf/8eB3//HAN//xgBf/8QAH//AAB//wABf/8AA3//gAd//8APf//wD3///C9///5vf//+73///x9//w=="),
+    auto;
+  padding: 10px;
+}
+
+td:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+input[type="color"] {
+  cursor: pointer;
+}
+
+input[type="number"] {
+  border: 3px groove rgba(20, 20, 20, 1);
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 1);
+  cursor: text;
+  font-family: "PT Mono", monospace;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 4px;
+  text-align: center;
+  text-shadow: 1px 1px rgba(128, 128, 128, 1);
+  width: 5em;
+}
+
+input[type="number"]:focus {
+  background: rgba(0, 0, 0, 1);
+  border: 3px groove rgba(255, 255, 255, 1);
+  color: rgba(192, 192, 192, 1);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.wrapper {
+  border-spacing: 10px;
+  display: table;
+  margin: 0 auto;
+}
+
+.widgetContainer {
+  background-color: rgba(128, 128, 128, 1);
+  background-image: linear-gradient(
+    rgba(204, 255, 204, 1),
+    rgba(128, 128, 128, 0.5)
+  );
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+  color: rgba(0, 0, 0, 1);
+  display: table-cell;
+  padding: 0.7em;
+}
+
+.pageLogo {
+  background-color: rgba(128, 128, 128, 1);
+  background-image: linear-gradient(
+    rgba(128, 128, 128, 0.5),
+    rgba(80, 80, 80, 1)
+  );
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+  color: rgba(20, 20, 20, 1);
+  letter-spacing: 4px;
+  text-shadow: 3px 3px rgba(192, 192, 192, 1);
+  width: 100%;
+}
+
+.footNote {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(rgba(80, 80, 80, 1), rgba(0, 0, 0, 1));
+  border: 1px solid #000;
+  color: rgba(192, 192, 192, 1);
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 0 0 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+.canvas {
+  background-color: rgba(128, 128, 128, 1);
+  background-image: linear-gradient(
+    to right,
+    rgba(211, 211, 211, 1),
+    rgba(211, 211, 211, 1),
+    rgba(169, 169, 169, 1),
+    rgba(169, 169, 169, 1),
+    rgba(128, 128, 128, 1),
+    rgba(128, 128, 128, 1)
+  );
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  border: 1px solid #000;
+  overflow: auto;
+  padding-bottom: 10px;
+  resize: both;
+}
+
+.h2Font {
+  font-family: "Gugi", cursive;
+  text-decoration: underline;
+  text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
+}
+
+.canvasHeading {
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.labelText {
+  font-family: "Gugi", cursive;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px rgba(128, 128, 128, 1);
+}
+
+.button {
+  background-color: rgba(128, 128, 128, 1);
+  background-image: linear-gradient(
+    rgba(211, 211, 211, 1),
+    rgba(192, 192, 192, 1)
+  );
+  border: 3px outset rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Gugi", cursive;
+  font-weight: bold;
+  padding: 4px;
+  text-shadow: 1px 1px rgba(128, 128, 128, 1);
+}
