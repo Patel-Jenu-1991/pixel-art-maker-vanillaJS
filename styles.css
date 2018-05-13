@@ -1,15 +1,15 @@
 /*
     CSS for my Pixel Art App
     Author: Jaineshkumar Patel
-    
+
     Credits:
     --------
     1. Team Udacity for providing the starter code
     2. www.cursor.cc for providing the cursor image
-    
+
     I would like to bring to your notice that cursor.cc
     is itself an implementation of the pixel art app
-    
+
     References:
     -----------
     MDN
@@ -27,6 +27,7 @@ body {
     rgba(191, 0, 255, 1),
     rgba(128, 0, 255, 1)
   );
+  height: 100%;
   margin: 0;
   padding: 0px;
   text-align: center;
@@ -103,7 +104,7 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-.widgetContainer {
+.widget-container {
   background-color: rgba(128, 128, 128, 1);
   background-image: linear-gradient(
     rgba(204, 255, 204, 1),
@@ -116,7 +117,7 @@ input[type="submit"] {
   padding: 0.7em;
 }
 
-.pageLogo {
+.page-logo {
   background-color: rgba(128, 128, 128, 1);
   background-image: linear-gradient(
     rgba(128, 128, 128, 0.5),
@@ -130,7 +131,7 @@ input[type="submit"] {
   width: 100%;
 }
 
-.footNote {
+.foot-note {
   background-color: rgba(0, 0, 0, 1);
   background-image: linear-gradient(rgba(80, 80, 80, 1), rgba(0, 0, 0, 1));
   border: 1px solid #000;
@@ -161,19 +162,19 @@ input[type="submit"] {
   resize: both;
 }
 
-.h2Font {
+.custom-title {
   font-family: "Gugi", cursive;
   text-decoration: underline;
   text-shadow: 2px 2px rgba(128, 128, 128, 0.5);
 }
 
-.canvasHeading {
+.canvas-title {
   color: rgba(0, 0, 0, 1);
   letter-spacing: 2px;
   margin-top: 8px;
 }
 
-.labelText {
+.field-name {
   font-family: "Gugi", cursive;
   font-size: 18px;
   font-weight: bold;
@@ -181,7 +182,7 @@ input[type="submit"] {
   text-shadow: 2px 2px rgba(128, 128, 128, 1);
 }
 
-.button {
+.btn {
   background-color: rgba(128, 128, 128, 1);
   background-image: linear-gradient(
     rgba(211, 211, 211, 1),
